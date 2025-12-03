@@ -1,0 +1,126 @@
+Abstract (Project Overview)
+An Online Banking System is a secure, web-based and mobile-accessible platform that allows bank customers to perform financial transactions and manage their accounts remotely over the internet, 24/7, without visiting a physical branch. It provides services such as account balance inquiry, fund transfers, bill payments, transaction history, loan applications, credit/debit card management, and customer support, while ensuring high security, regulatory compliance (e.g., PCI-DSS, GDPR, KYC/AML), and seamless integration with the bank’s core banking system.
+Functional Requirements
+These describe what the system must do.
+
+User Authentication & Authorization
+Support multi-factor authentication (MFA: password + OTP via SMS/email/app, biometrics).
+Role-based access: Customer, Administrator, Support Staff, Auditor.
+Session management with timeout and concurrent login restrictions.
+
+Customer Registration & Profile Management
+New user registration (with KYC document upload and verification workflow).
+Update personal details, contact information, and security questions.
+Password reset/recovery via registered email/phone.
+
+Account Management
+View all linked accounts (savings, current, fixed deposit, loans, credit cards).
+View real-time account balance and mini-statement.
+Download detailed statements (PDF/Excel) for custom date ranges.
+
+Fund Transfer Services
+Intra-bank transfer (own accounts or other accounts in the same bank).
+Inter-bank transfer (NEFT, RTGS, IMPS, UPI, SWIFT for international).
+Scheduled and recurring transfers.
+Beneficiary management (add, verify, delete).
+
+Bill Payment & Recharges
+Pay utility bills (electricity, water, gas, telephone).
+Mobile/DTH recharge.
+Credit card bill payment (own and other banks).
+Save frequent billers.
+
+Cheque Management
+Request new cheque book.
+Stop cheque payment.
+View cheque status.
+
+Card Management
+View debit/credit card details (last 4 digits, expiry, CVV masked).
+Block/unblock card.
+Set/change card limits and PIN.
+Apply for new card or replacement.
+
+Loan & Fixed/Recurring Deposit Services
+Apply for personal, home, vehicle loans.
+View loan accounts, EMI schedule, foreclosure options.
+Open/close fixed or recurring deposits.
+
+Transaction History & Search
+View complete transaction history with advanced filters (date, amount, type, status).
+Export transaction data.
+
+Alerts & Notifications
+Real-time SMS/email/push notifications for transactions, login, low balance, bill due, etc.
+Customizable alert preferences.
+
+Customer Support
+Raise service requests/complaints.
+Live chat/integration with chatbot.
+Track request status.
+
+Administrative Functions
+User management (block/unblock accounts, reset passwords).
+View audit logs and suspicious activity.
+Manage interest rates, fees, and system parameters.
+Generate regulatory and management reports.
+
+
+Non-Functional Requirements
+These describe how well the system performs the functional requirements.
+
+Security
+End-to-end encryption (TLS 1.3) for data in transit.
+Data encryption at rest (AES-256).
+Protection against OWASP Top 10 vulnerabilities (SQL injection, XSS, CSRF, etc.).
+Secure session management and anti-phishing measures.
+Regular penetration testing and vulnerability scanning.
+Compliance with PCI-DSS, ISO 27001, GDPR, RBI guidelines (for India), etc.
+
+Performance
+Page load time ≤ 3 seconds under normal load (95th percentile).
+System must handle ≥ 50,000 concurrent users.
+Transaction processing time ≤ 5 seconds for domestic transfers.
+Core banking system integration response time ≤ 2 seconds.
+
+Scalability
+Horizontal and vertical scaling capability.
+Support peak loads (e.g., salary credit days, festive seasons) up to 500,000 concurrent users.
+Cloud-native/microservices architecture preferred.
+
+Availability & Reliability
+99.99% uptime (≤ 52 minutes downtime per year).
+High-availability setup with multi-region disaster recovery.
+Automatic failover and zero-downtime deployments.
+
+Usability
+Intuitive, responsive UI/UX supporting desktop, tablet, and mobile.
+Multi-language support (minimum English + regional languages).
+WCAG 2.1 AA accessibility compliance.
+Support for both web portal and native mobile apps (iOS & Android).
+
+Maintainability
+Modular, loosely coupled architecture (microservices/API-based).
+Comprehensive logging and monitoring (application performance, errors, security events).
+Automated CI/CD pipeline.
+
+Interoperability
+Integration with core banking system (Finacle, Flexcube, Temenos, etc.) via ISO 20022 or proprietary APIs.
+Integration with payment gateways (UPI, Visa, Mastercard, wallets).
+Support RESTful APIs and webhooks for third-party fintech integrations.
+
+Portability
+Cross-browser compatibility (Chrome, Firefox, Safari, Edge latest versions).
+Mobile apps available on Google Play Store and Apple App Store.
+
+Backup & Recovery
+Daily incremental and weekly full backups.
+Disaster recovery time objective (RTO) ≤ 4 hours, recovery point objective (RPO) ≤ 15 minutes.
+
+Legal & Regulatory Compliance
+Audit trail for all transactions and administrative actions.
+Data retention and deletion as per regulatory requirements.
+KYC/AML screening integration.
+
+
+These requirements form the foundation for designing, developing, and testing a robust, secure, and customer-friendly online banking system. They can be further elaborated into
