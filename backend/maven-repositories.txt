@@ -1,0 +1,250 @@
+a) Functional & Non-Functional Requirements of Food Delivery Application
+Functional Requirements
+
+These describe what the system should do.
+
+1. User Registration & Login
+
+Users should be able to sign up using email/phone.
+
+Users should log in securely using credentials or OTP.
+
+2. Browse Restaurants & Food Items
+
+Users can view list of restaurants.
+
+Users can view menus, prices, ratings, offers.
+
+3. Search Functionality
+
+Search for restaurants or food items by name, cuisine, location.
+
+4. Cart Management
+
+Add items to cart.
+
+Remove items from cart.
+
+Update quantity of items.
+
+5. Order Placement
+
+Select delivery address.
+
+Choose payment mode (COD, UPI, card).
+
+Confirm order.
+
+6. Payment Processing
+
+Handle secure online payments.
+
+Provide transaction status.
+
+7. Order Tracking
+
+Track order status: Accepted → Preparing → Out for Delivery → Delivered.
+
+8. Delivery Management
+
+Assign delivery partner.
+
+Delivery partner updates status.
+
+9. Notifications
+
+Push notifications for order updates.
+
+Alerts for offers and promotions.
+
+10. Ratings & Reviews
+
+Users can rate restaurants and delivery partners.
+
+Add written reviews.
+
+11. Admin Functionalities
+
+Manage restaurants, food items, offers.
+
+View sales reports.
+
+Manage users and delivery agents.
+
+Non-Functional Requirements
+
+These define how the system should behave.
+
+1. Performance
+
+Fast loading time (< 3 seconds).
+
+Handle peak traffic smoothly.
+
+2. Scalability
+
+Should support increasing number of users, restaurants, and orders.
+
+3. Security
+
+Data encryption.
+
+Secure payment gateway.
+
+Protect user information.
+
+4. Reliability
+
+System available 99% of the time.
+
+No data loss during transaction.
+
+5. Usability
+
+Simple, intuitive UI.
+
+Easy navigation for ordering.
+
+6. Maintainability
+
+Modular code and clear documentation.
+
+Easy to update features.
+
+7. Availability
+
+Should work 24/7 without downtime.
+
+8. Compatibility
+
+Should run on Android, iOS, and Web.
+
+Compatible with different browser versions.
+a) Functional & Non-Functional Requirements of an Online Banking System
+Functional Requirements
+
+These describe what the system must do.
+
+1. User Registration & Login
+
+Users should sign up using account details and personal information.
+
+Users log in with username/password and OTP verification.
+
+Secure session management.
+
+2. Account Management
+
+View account details (balance, account number, branch).
+
+View transaction history.
+
+Update profile information.
+
+3. Fund Transfer
+
+Transfer money between own accounts.
+
+Transfer to other bank accounts (NEFT/RTGS/IMPS).
+
+Add/manage beneficiaries.
+
+Confirm transfer using OTP/2FA.
+
+4. Bill Payments
+
+Pay electricity, water, mobile recharge, DTH, broadband, etc.
+
+Automatic bill reminders and scheduled payments.
+
+5. Deposit & Loan Services
+
+Apply for loans (home loan, personal loan).
+
+Fixed deposit & recurring deposit creation.
+
+View loan status and repayment schedule.
+
+6. Card Services
+
+Apply for debit/credit cards.
+
+Block/unblock cards.
+
+View card limits and statements.
+
+7. Notifications & Alerts
+
+SMS/email alerts for logins, fund transfers, withdrawals, deposits.
+
+Fraud detection alerts.
+
+8. Customer Support
+
+In-app chat or message support.
+
+Raise service requests or report issues.
+
+9. Admin Functionalities
+
+Manage user accounts.
+
+Monitor transactions for fraud.
+
+Generate reports.
+
+Non-Functional Requirements
+
+These describe how the system behaves.
+
+1. Security
+
+End-to-end encryption of data.
+
+Multi-factor authentication.
+
+Role-based access.
+
+Secure payment gateway.
+
+Protection against cyber-attacks.
+
+2. Performance
+
+Fast page loading (< 3 seconds).
+
+Real-time transaction updates.
+
+Should handle thousands of concurrent users.
+
+3. Reliability
+
+System uptime must be 99.9%.
+
+No transaction loss during process interruptions.
+
+4. Scalability
+
+Should support growing number of users and transactions.
+
+5. Usability
+
+Intuitive interface for users of all ages.
+
+Easy navigation for transactions.
+
+6. Maintainability
+
+Easy to update modules (transfer, payments, card services).
+
+Clean, modular architecture.
+
+7. Availability
+
+System must run 24/7 without downtime.
+
+8. Compatibility
+
+Supports Android, iOS, and web browsers.
+
+Works on different screen sizes.
